@@ -133,3 +133,10 @@ class list_services():
       if(test==1):
         list.append(x)
     return list
+class power:
+  def poweroff(self):
+    run=subprocess.check_output("systemctl poweroff", shell=True)
+  def reboot(self):
+    run=subprocess.check_output("systemctl reboot", shell=True)
+  def rescue(self):
+    run=subprocess.check_output("systemctl rescue", shell=True)
