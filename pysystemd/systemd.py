@@ -17,7 +17,7 @@ class status():
   def is_enable(self):
     """ if the service enabled return 0. """
 
-    run=subprocess.check_output("systemctl | grep enable", shell=True)
+    run=subprocess.check_output("systemctl | grep enabled", shell=True)
     str_run=str(run)
     test=str_run.find(self.service)
     if(test==-1):
@@ -134,9 +134,17 @@ class list_services():
         list.append(x)
     return list
 class power:
+  """server power manager."""
   def poweroff(self):
+    """poweroff the system."""
+
     run=subprocess.check_output("systemctl poweroff", shell=True)
   def reboot(self):
+    "reboot the system."""
     run=subprocess.check_output("systemctl reboot", shell=True)
   def rescue(self):
+    """boot to rescue mode."""
     run=subprocess.check_output("systemctl rescue", shell=True)
+  def suspend(self):
+    """suspend the system."""
+    run=subprocess.check_output("systemctl suspend", shell=True)
