@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'pysystemd',
   packages = ['pysystemd'],
-  version = '1.0.1',
+  version = '1.0.2',
   description = 'a systemd binding Library in python',
   author = 'alimiracle',
   author_email = 'alimiracle@riseup.net',

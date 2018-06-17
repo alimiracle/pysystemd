@@ -86,3 +86,26 @@ list_disable()
 
 its return all disabled services as list
 
+4- power
+
+this class use to manage the power in the system
+
+to poweroff
+
+to poweroff the system use
+
+poweroff()
+
+the reboot the system use
+
+reboot()
+
+
+to boot to rescue mode use
+
+
+rescue()
+
+to suspend the system use
+
+suspend()
