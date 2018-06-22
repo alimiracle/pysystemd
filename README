@@ -7,7 +7,7 @@ to install pysystemd use pip install pysystemd
 
 ### How to use
 
-this library contains 3 classes
+this library contains 4 classes
 
 1- status
 
